@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// 1. Ã°Åİ·¨£¬[O(n^2,n,n^2--1)]£¬ ÎÈ¶¨
+// 1. å†’æ³¡æ³•ï¼Œ[O(n^2,n,n^2--1)]ï¼Œ ç¨³å®š
 vector<int> bubbleSort(vector<int> arr)
 {
 	int len = arr.size();
@@ -19,7 +19,7 @@ vector<int> bubbleSort(vector<int> arr)
 	return arr;
 }
 
-// 2. Ñ¡ÔñÅÅĞò,[O(n^2, n^2?, n^2--1)], ²»ÎÈ¶¨
+// 2. é€‰æ‹©æ’åº,[O(n^2, n^2?, n^2--1)], ä¸ç¨³å®š
 vector<int> selectionSort(vector<int> arr)
 {
 	int len = arr.size();
@@ -38,7 +38,7 @@ vector<int> selectionSort(vector<int> arr)
 	return arr;
 }
 
-//²åÈëÅÅĞò, [O(n^2, n, n^2 -- 1)], ÎÈ¶¨
+//æ’å…¥æ’åº, [O(n^2, n, n^2 -- 1)], ç¨³å®š
 vector<int> insertionSort(vector<int> arr)
 {
 	int len = arr.size();
@@ -55,7 +55,7 @@ vector<int> insertionSort(vector<int> arr)
 	return arr;
 }
 
-//Ï£¶ûÅÅĞò, [O(n^1.3, n, n^2 -- 1)], ²»ÎÈ¶¨
+//å¸Œå°”æ’åº, [O(n^1.3, n, n^2 -- 1)], ä¸ç¨³å®š
 vector<int> shellSort(vector<int> arr)
 {
 	int len = arr.size();
@@ -81,7 +81,7 @@ vector<int> shellSort(vector<int> arr)
 	return arr;
 }
 
-//¹é²¢ÅÅĞò, O[(nlogn, nlogn, nlogn, -- n)], ÎÈ¶¨
+//å½’å¹¶æ’åº, O[(nlogn, nlogn, nlogn, -- n)], ç¨³å®š
 void merge(vector<int> &arr, int low, int mid, int high)
 {
 	vector<int> tmp(arr);
@@ -125,7 +125,7 @@ vector<int> mergeSort(vector<int> &arr)
 	return arr;
 }
 
-//¿ìËÙÅÅĞò, [O(nlogn, nlogn, n^2 --logn)], ²»ÎÈ¶¨
+//å¿«é€Ÿæ’åº, [O(nlogn, nlogn, n^2 --logn)], ä¸ç¨³å®š
 int patition(vector<int> &arr, int low, int high)
 {
 	int pivot = arr[low];
@@ -161,7 +161,7 @@ vector<int> quickSort(vector<int> &arr)
 	return arr;
 }
 
-//¶ÑÅÅĞò [O(nlogn, nlogn, nlogn --1)], ²»ÎÈ¶¨
+//å †æ’åº [O(nlogn, nlogn, nlogn --1)], ä¸ç¨³å®š
 void heap(vector<int> &arr, int start, int end)
 {
 	int tmp = arr[start];
@@ -222,6 +222,5 @@ void main52()
 		cout << res[i] << ends;
 	}
 	cout << endl;
-
 	system("pause");
 }
